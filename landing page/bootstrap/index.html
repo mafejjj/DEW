@@ -1,277 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Tio Meio Rico</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <style>
-        header {
-            background-image: url('../img/fundo.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        header h1 {
-            color: white;
-            font-size: 4rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            text-align: center;
-        }
-    
-        .card {
-    background-color: #f0f0f0;
-    box-shadow: 0 0 5px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
-}
 
-.card:hover {
-    transform: translateY(-10px); /* Move o card para cima */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
-}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Tio Meio Rico</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#cursos">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#valores">Valores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-.card-img-top {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-    
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
-    
-    <header>
-        <h1>Tio Meio Rico - Cursos para o Futuro</h1>
+    <header class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <img src="../img/tio.png" alt="Logo Tio Meio Rico" class="img-fluid rounded-circle mb-4">
+            <h1 class="display-4">Bem-vindo ao Tio Meio Rico</h1>
+            <p class="lead" style="color: white;">Os melhores cursos para sua carreira decolar!</p>
+        </div>
     </header>
 
-    <section class="container my-5">
-        <p>
-            Era uma vez uma empresa chamada "Tio Meio Rico", especializada em oferecer cursos incríveis para quem deseja alcançar a liberdade financeira e prosperar. Com uma equipe experiente e dedicada, ajudamos nossos alunos a desenvolverem habilidades práticas para transformar seus sonhos em realidade. Nosso compromisso é fornecer conteúdos acessíveis e de alta qualidade, sempre focados em resultados. Queremos que você seja o protagonista da sua própria história de sucesso. Venha fazer parte dessa jornada!
-        </p>
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="mb-4">Por que escolher o Tio Meio Rico?</h2>
+                <p class="lead">Nossos cursos foram desenvolvidos por especialistas em cada área para garantir que você receba o melhor conhecimento e as habilidades necessárias para transformar sua carreira.</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Material Atualizado</h4>
+                    <p>Conteúdos revisados e sempre atualizados para acompanhar as novas tendências do mercado.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Suporte Dedicado</h4>
+                    <p>Equipe de suporte sempre pronta para tirar suas dúvidas a qualquer momento do curso.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Certificado Reconhecido</h4>
+                    <p>Ao final do curso, você receberá um certificado reconhecido que dará destaque ao seu currículo.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="container my-5 text-center">
-       <h2>Confira nossos cursos!</h2> 
-    </section>
-
-    <!-- Seção de Cards -->
-    <section class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="../img/marketing.png" class="card-img-top" alt="Curso 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Curso de Marketing Digital</h5>
-                        <p class="card-text">Aprenda as melhores estratégias para alavancar sua empresa.</p>
+    <section id="cursos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="mb-5">Nossos Cursos</h2>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="../img/marketing.png" class="card-img-top" alt="Curso 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Curso de Marketing Digital</h5>
+                            <p class="card-text">Aprenda a dominar o marketing nas redes sociais e impulsionar seu negócio.</p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="../img/programacao.png" class="card-img-top" alt="Curso 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Curso de Programação Web</h5>
+                            <p class="card-text">Torne-se um especialista em desenvolvimento web com tecnologias modernas.</p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="../img/design.png" class="card-img-top" alt="Curso 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Curso de Design Gráfico</h5>
+                            <p class="card-text">Desenvolva suas habilidades criativas e crie designs.</p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="../img/programacao.png" class="card-img-top" alt="Curso 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Curso de Programação Web</h5>
-                        <p class="card-text">Torne-se um mestre no desenvolvimento de sites e aplicações.</p>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">O que nossos alunos dizem</h2>
+            <div id="depoimentosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../img/homem1.png" class="card-img-top rounded-circle" alt="Aluno 1">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">João Silva</h5>
+                                    <p class="card-text">"O curso de Marketing Digital foi transformador para meu negócio. Recomendo a todos!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../img/mulher.png" class="card-img-top rounded-circle" alt="Aluno 2">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Maria Oliveira</h5>
+                                    <p class="card-text">"O suporte do curso foi excelente, sempre tirando minhas dúvidas com rapidez."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../img/homem2.png" class="card-img-top rounded-circle" alt="Aluno 3">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Carlos Souza</h5>
+                                    <p class="card-text">"Aprendi muito sobre desenvolvimento web e já consegui meu primeiro emprego na área."</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="../img/design.png" class="card-img-top" alt="Curso 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Curso de Design Gráfico</h5>
-                        <p class="card-text">Crie designs incríveis com as melhores ferramentas do mercado.</p>
+        </div>
+    </section>
+
+    <section id="valores" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Valores dos Cursos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h5>Curso de Marketing Digital</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">R$ 499,00</h3>
+                            <p class="card-text">Aproveite agora e comece a dominar o marketing digital!</p>
+                            <a href="#" class="btn btn-success">Comprar Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h5>Curso de Programação Web</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">R$ 699,00</h3>
+                            <p class="card-text">Torne-se um desenvolvedor web com esse curso completo.</p>
+                            <a href="#" class="btn btn-success">Comprar Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h5>Curso de Design Gráfico</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">R$ 599,00</h3>
+                            <p class="card-text">Aprenda as melhores técnicas de design gráfico.</p>
+                            <a href="#" class="btn btn-success">Comprar Agora</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tabela de Preços -->
-    <section class="container my-5">
-        <h2 class="text-center">Tabela de Preços</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Curso</th>
-                    <th>Duração</th>
-                    <th>Preço</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Marketing Digital</td>
-                    <td>3 meses</td>
-                    <td>R$ 599,00</td>
-                    <td><a href="#" class="btn btn-primary">Conheça mais</a></td>
-                </tr>
-                <tr>
-                    <td>Programação Web</td>
-                    <td>6 meses</td>
-                    <td>R$ 799,00</td>
-                    <td><a href="#" class="btn btn-primary">Conheça mais</a></td>
-                </tr>
-                <tr>
-                    <td>Design Gráfico</td>
-                    <td>4 meses</td>
-                    <td>R$ 699,00</td>
-                    <td><a href="#" class="btn btn-primary">Conheça mais</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+   <section id="formulario" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Compre seu Curso</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+            </div>
 
-    <!-- Depoimentos de Alunos -->
-<section class="container my-5 text-center">
-    <h2>O que nossos alunos dizem</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card h-100 text-center shadow-sm">
-                <div class="card-body">
-                    <p class="card-text">"Esse curso transformou a minha vida! As aulas são práticas e diretas ao ponto. Recomendo a todos."</p>
-                    <h5 class="card-title mt-4">João Silva</h5>
-                    <p class="text-muted">Aluno do curso de Programação Web</p>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="endereco" class="form-label">Endereço Completo</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço completo" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="00000-000" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="pais" class="form-label">País</label>
+                    <input type="text" class="form-control" id="pais" placeholder="Digite seu país" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" required>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 text-center shadow-sm">
-                <div class="card-body">
-                    <p class="card-text">"A melhor decisão que já tomei foi estudar aqui. Os professores são incríveis e o conteúdo é atualizado."</p>
-                    <h5 class="card-title mt-4">Maria Santos</h5>
-                    <p class="text-muted">Aluna do curso de Marketing Digital</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 text-center shadow-sm">
-                <div class="card-body">
-                    <p class="card-text">"Conteúdo de altíssima qualidade e suporte incrível. Aprendi muito mais do que esperava!"</p>
-                    <h5 class="card-title mt-4">Carlos Oliveira</h5>
-                    <p class="text-muted">Aluno do curso de Design Gráfico</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="curso" class="form-label">Curso</label>
+                    <select class="form-select" id="curso" required>
+                        <option selected disabled>Escolha um curso</option>
+                        <option value="1">Curso 1</option>
+                        <option value="2">Curso 2</option>
+                        <option value="3">Curso 3</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="pagamento" class="form-label">Forma de Pagamento</label>
+                    <select class="form-select" id="pagamento" required>
+                        <option selected disabled>Escolha uma forma de pagamento</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="pix">PIX</option>
+                    </select>
                 </div>
             </div>
-        </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Comprar Agora</button>
+            </div>
+        </form>
     </div>
 </section>
 
-    <!-- Formulário de Inscrição -->
-    <section class="container my-5">
-        <h2>Inscreva-se Agora</h2>
-        <form>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                </div>
-                <div class="col-md-6">
-                    <label for="sobrenome" class="form-label">Sobrenome</label>
-                    <input type="text" class="form-control" id="sobrenome" placeholder="Seu sobrenome">
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-12">
-                    <label for="endereco" class="form-label">Endereço Completo</label>
-                    <input type="text" class="form-control" id="endereco" placeholder="Rua, número, bairro, cidade">
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="cep" class="form-label">CEP</label>
-                    <input type="text" class="form-control" id="cep" placeholder="00000-000">
-                </div>
-                <div class="col-md-4">
-                    <label for="estado" class="form-label">Estado</label>
-                    <select class="form-select" id="estado">
-                        <option selected>Selecione...</option>
-                        <option>SP</option>
-                        <option>RJ</option>
-                        <option>MG</option>
-                        <!-- Adicione outros estados -->
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label for="pais" class="form-label">País</label>
-                    <input type="text" class="form-control" id="pais" placeholder="Brasil">
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
-                </div>
-                <div class="col-md-6">
-                    <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000">
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="usuario" class="form-label">Usuário</label>
-                    <input type="text" class="form-control" id="usuario" placeholder="Escolha um nome de usuário">
-                </div>
-                <div class="col-md-6">
-                    <label for="senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="senha">
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="curso" class="form-label">Curso</label>
-                <select class="form-select" id="curso">
-                    <option selected>Selecione...</option>
-                    <option>Marketing Digital</option>
-                    <option>Programação Web</option>
-                    <option>Design Gráfico</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
-                <label for="pagamento" class="form-label">Forma de Pagamento</label>
-                <select class="form-select" id="pagamento">
-                    <option selected>Selecione...</option>
-                    <option>Cartão de Crédito</option>
-                    <option>Boleto Bancário</option>
-                    <option>Pix</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
-                <label for="idade" class="form-label">Idade</label>
-                <input type="number" class="form-control" id="idade" placeholder="Sua idade">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Tio Meio Rico. Todos os direitos reservados.</p>
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Tio Meio Rico - Todos os direitos reservados</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
